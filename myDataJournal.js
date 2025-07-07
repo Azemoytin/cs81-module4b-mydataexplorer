@@ -1,3 +1,5 @@
+// https://github.com/Azemoytin/cs81-module4b-mydataexplorer
+
 // weekData array: one object per day with realistic personal metrics
 const weekData = [
 { day: "Monday",    sleepHours: 7.5, screenTime: 6.0, mood: "Energetic", caffeineIntake: 0, focusLevel: 8 },
