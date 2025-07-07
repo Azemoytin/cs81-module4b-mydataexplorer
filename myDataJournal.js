@@ -9,3 +9,9 @@ const weekData = [
 { day: "Sunday",    sleepHours: 8.5, screenTime: 4.5, mood: "Calm",     caffeineIntake: 0, focusLevel: 8 }
 ];
 
+// PREDICTIONS:
+// 1. I predict Thursday had the most screen time.
+// 2. I predict Wednesday had the best focus level.
+// 3. I predict caffeine intake will not affect focus when it’s zero every day.
+
+
