@@ -12,6 +12,6 @@
      Creating the correlateCaffeineToFocus function was rewarding. It reinforced grouping data and averages. It also helped to predict the data beforehand to focus the analysis.
 
   4. How did using your own data change things?
-     Using personal data made the exercise more engaging because I could immediately relate to my actual life habits, which made the functions feel practically useful.
+     Using personal data made the exercise more engaging because I could immediately relate to my actual life habits, which made the functions feel easier to create.
 
 
