@@ -13,5 +13,5 @@
 
   4. How did using your own data change things?
      Using personal data made the exercise more engaging because I could immediately relate to my actual life habits, which made the functions feel practically useful.
-*/
+
 
