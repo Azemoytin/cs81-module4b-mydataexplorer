@@ -14,4 +14,38 @@ const weekData = [
 // 2. I predict Wednesday had the best focus level.
 // 3. I predict caffeine intake will not affect focus when it’s zero every day.
 
+function findHighestScreenTime() {
+  return weekData.reduce((max, day) => day.screenTime > max.screenTime ? day : max, weekData[0]);
+}
+
+function averageSleep() {
+  const total = weekData.reduce((sum, day) => sum + day.sleepHours, 0);
+  return total / weekData.length;
+}
+
+function mostFrequentMood() {
+  const counts = {};
+  weekData.forEach(day => counts[day.mood] = (counts[day.mood] || 0) + 1);
+  return Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+}
+
+function correlateCaffeineToFocus() {
+  const map = {};
+  weekData.forEach(({ caffeineIntake, focusLevel }) => {
+    if (!map[caffeineIntake]) map[caffeineIntake] = { total: 0, count: 0 };
+    map[caffeineIntake].total += focusLevel;
+    map[caffeineIntake].count += 1;
+  });
+  const result = {};
+  for (let cups in map) {
+    result[cups] = map[cups].total / map[cups].count;
+  }
+  return result;
+}
+
+// Example logs
+console.log("Highest screen time:", findHighestScreenTime());
+console.log("Average sleep:", averageSleep());
+console.log("Most frequent mood:", mostFrequentMood());
+console.log("Caffeine->Focus correlation:", correlateCaffeineToFocus());
 
